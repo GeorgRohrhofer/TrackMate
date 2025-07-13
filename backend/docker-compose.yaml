@@ -1,0 +1,55 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: trackuser
+      POSTGRES_PASSWORD: trackpass
+      POSTGRES_DB: trackdb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - backend
+
+  app:
+    build: .
+    depends_on:
+      - db
+      - flyway
+    environment:
+      DB_HOST: db
+      DB_PORT: "5432"
+      DB_USER: trackuser
+      DB_PASSWORD: trackpass
+      DB_NAME: trackdb
+    ports:
+      - "8080:8080"
+    networks:
+      - backend
+
+  adminer:
+    image: adminer
+    restart: unless-stopped
+    ports:
+      - "8081:8080"
+    networks:
+      - backend
+
+  flyway:
+    image: flyway/flyway:10-alpine
+    depends_on:
+      - db
+    volumes:
+      - ./migrations:/flyway/sql     # Deine SQL-Migrationen
+    command: -connectRetries=10 -url=jdbc:postgresql://db:5432/trackdb -user=trackuser -password=trackpass migrate
+    networks:
+      - backend
+
+volumes:
+  pgdata:
+
+networks:
+  backend:
+    driver: bridge
