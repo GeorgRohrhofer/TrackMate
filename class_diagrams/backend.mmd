@@ -1,0 +1,75 @@
+classDiagram
+    class User {
+        +int id
+        +string name
+        +string email
+        +string passwordHash
+        +login()
+        +logout()
+    }
+
+    class Project {
+        +int id
+        +string name
+        +string description
+        +DateTime startDate
+        +DateTime endDate
+        +addUser(User user)
+        +removeUser(User user)
+    }
+
+    class Task {
+        +int id
+        +string title
+        +string description
+        +Status status
+        +assignTo(User user)
+        +markComplete()
+    }
+
+    class TimeEntry {
+        +int id
+        +DateTime startTime
+        +DateTime endTime
+        +string description
+        +calculateDuration()
+    }
+
+    class UserAPI  {
+        +createUser()
+        +getUser()
+        +updateUser()
+        +deleteUser()
+    }
+
+    class ProjectAPI {
+        +createProject()
+        +getProject()
+        +updateProject()
+        +deleteProject()
+    }
+
+    class TaskAPI {
+        +createTask()
+        +getTask()
+        +updateTask()
+        +deleteTask()
+    }
+
+    class TimeEntryAPI {
+        +createTimeEntry()
+        +getTimeEntry()
+        +updateTimeEntry()
+        +deleteTimeEntry()
+    }
+
+    User "1" -- "*" TimeEntry : tracks
+    Project "1" -- "*" Task : contains
+    Project "1" -- "*" TimeEntry : has
+    Task "1" -- "*" TimeEntry : logs
+    User "*" -- "*" Project : worksOn
+
+    UserAPI ..> User : manages
+    ProjectAPI ..> Project : manages
+    TaskAPI ..> Task : manages
+    TimeEntryAPI ..> TimeEntry : manages
