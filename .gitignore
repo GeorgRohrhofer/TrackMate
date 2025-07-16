@@ -1,0 +1,41 @@
+# === Build-Dateien ===
+/build/
+/cmake-build-*/
+/CMakeFiles/
+/CMakeCache.txt
+/Makefile
+/install_manifest.txt
+/compile_commands.json
+
+# === Binarys & Output ===
+/TrackMateBackend
+/*.out
+/*.exe
+/*.log
+
+# === Drogon temporäre Dateien ===
+/log/
+upload/
+.drogon_config.json
+
+# === Docker ===
+*.env
+.env.local
+docker-compose.override.yml
+
+# === Flyway ===
+flyway.conf
+/flyway/sql/*.lock
+
+# === Editor-spezifisch ===
+.vscode/
+.idea/
+*.swp
+*~
+
+# === OS-spezifisch ===
+.DS_Store
+Thumbs.db
+
+# === Git ===
+*.orig
