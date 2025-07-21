@@ -1,0 +1,15 @@
+/home/georg/Documents/software/git/TrackMate/backend/TrackMate.Backend/bin/Debug/net8.0/TrackMate.Backend
+/home/georg/Documents/software/git/TrackMate/backend/TrackMate.Backend/bin/Debug/net8.0/TrackMate.Backend.deps.json
+/home/georg/Documents/software/git/TrackMate/backend/TrackMate.Backend/bin/Debug/net8.0/TrackMate.Backend.runtimeconfig.json
+/home/georg/Documents/software/git/TrackMate/backend/TrackMate.Backend/bin/Debug/net8.0/TrackMate.Backend.dll
+/home/georg/Documents/software/git/TrackMate/backend/TrackMate.Backend/bin/Debug/net8.0/TrackMate.Backend.pdb
+/home/georg/Documents/software/git/TrackMate/backend/TrackMate.Backend/obj/Debug/net8.0/TrackMate.Backend.GeneratedMSBuildEditorConfig.editorconfig
+/home/georg/Documents/software/git/TrackMate/backend/TrackMate.Backend/obj/Debug/net8.0/TrackMate.Backend.AssemblyInfoInputs.cache
+/home/georg/Documents/software/git/TrackMate/backend/TrackMate.Backend/obj/Debug/net8.0/TrackMate.Backend.AssemblyInfo.cs
+/home/georg/Documents/software/git/TrackMate/backend/TrackMate.Backend/obj/Debug/net8.0/TrackMate.Backend.csproj.CoreCompileInputs.cache
+/home/georg/Documents/software/git/TrackMate/backend/TrackMate.Backend/obj/Debug/net8.0/TrackMate.Backend.sourcelink.json
+/home/georg/Documents/software/git/TrackMate/backend/TrackMate.Backend/obj/Debug/net8.0/TrackMate.Backend.dll
+/home/georg/Documents/software/git/TrackMate/backend/TrackMate.Backend/obj/Debug/net8.0/refint/TrackMate.Backend.dll
+/home/georg/Documents/software/git/TrackMate/backend/TrackMate.Backend/obj/Debug/net8.0/TrackMate.Backend.pdb
+/home/georg/Documents/software/git/TrackMate/backend/TrackMate.Backend/obj/Debug/net8.0/TrackMate.Backend.genruntimeconfig.cache
+/home/georg/Documents/software/git/TrackMate/backend/TrackMate.Backend/obj/Debug/net8.0/ref/TrackMate.Backend.dll
